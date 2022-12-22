@@ -1,14 +1,11 @@
 #include "main.h"
 
 /**
- * infinite_add - add 2 integers.
- * @n1: integer
- * @n2: integer
- * @r: buffer
- * size_r: size of r
- * Return: char
- */
-
+  * _atoi - converts ASCII to integer
+  * @s: pointer to the character
+  *
+  * Return: int
+  */
 int _atoi(char *s)
 {
 	int sign = 1, resp = 0, firstNum;
@@ -30,6 +27,12 @@ int _atoi(char *s)
 	return (sign * resp);
 }
 
+/**
+  * int_to_string - converts integer to string
+  * @n: the integet to convert
+  *
+  *Return: void
+  */
 void int_to_string(int n)
 {
 int divisor = 1, i, resp;
@@ -53,13 +56,21 @@ str[i] = ('0' + n);
 }
 
 
+/**
+ * infinite_add - add 2 integers.
+ * @n1: integer
+ * @n2: integer
+ * @r: buffer
+ * @size_r: size of r
+ * Return: char
+ */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-    int sum, a, b;
-    a = _atoi(n1);
-    b = _atoi(n2);
+	int sum, a, b;
 
-    sum = a + b;
+	a = _atoi(n1);
+	b = _atoi(n2);
+	sum = a + b;
 
 
 }
