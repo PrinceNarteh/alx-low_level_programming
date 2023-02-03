@@ -16,4 +16,4 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	order = ~(1 << index);
 	*n = *n & order;
 	return (1);
-}}
+}
